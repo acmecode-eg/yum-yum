@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo.png">
+    <title>yum yum</title>
+</head>
+<body>
+    <header class="mt-5">
+        <div class="container">
+            <div class="row mx-5 d-none" id="searchPlace">
+                <div class="col-md-12">
+                  <input type="text" class="form-control" placeholder="Search By Name" id="searchByName">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Search By First Letter" hidden id="searchByFirstLetter">
+                </div>
+              </div>
+        </div>
+    </header>
+
+    <section class="p-1 ">
+        <div class="container position-relative py-5">
+
+            <div class="row mx-5 g-4" id="meals">
+
+                <div class="mt-5 text-center loading text-warning" role="status">
+                    <i class="fa fa-spinner fa-spin fa-4x"></i>
+                </div>
+
+            </div>
+
+            <div class="row mx-5 py-5 position-absolute top-0 start-0 bg-black" id="instructions">
+                        
+            </div>
+
+            <div class="row mx-5 g-4" id="categories">
+
+            </div>
+
+            <div class="row mx-5 g-4" id="area">
+
+            </div>
+            
+            <div class="row mx-5 g-4" id="ingredients">
+
+            </div>
+
+            <div class="row mx-5 g-4 d-none" id="ContactUs">
+                <div class="text-danger text-center"><b>Not Available Now...</b></div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="userFirstName" placeholder="Enter Your Name">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="email" class="form-control" id="userSecondName" placeholder="Enter Email">
+                  </div>
+                <div class="col-md-6">
+                    <input type="tel" class="form-control" id="userPhone" placeholder="Enter Phone">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="number" class="form-control" id="userAge" placeholder="Enter Age">
+                  </div>
+                <div class="col-md-6 position-relative">
+                    <input type="password" class="form-control" id="userPassword" placeholder="Enter Password">
+                    <i class="fa-solid fa-eye showEye" id="showPass"></i>
+                  </div>
+                  <div class="col-md-6 position-relative">
+                    <input type="password" class="form-control" id="userRePassword" placeholder="Enter RePassword">
+                    <i class="fa-solid fa-eye showEye" id="showRePass"></i>
+                  </div>
+                  <button type="button" class="btn btn-outline-primary w-auto mx-auto disabledBtn" id="contactBtn" disabled>Submit</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- strip navbar -->
+    <section>
+        <div class="strip-header-navbar" id="headerNavbar">
+            <div class="strip-logo"><img src="images/logo.png"></div>
+            <div class="strip-toggel-menu"> <i class="fa-solid fa-bars" id="xMark"></i> </div>
+            <div class="strip-social-icon">
+                <div class="strip-lang">
+                    <span><a href="https://www.google.com/maps/place/%D8%AD%D8%AF%D8%A7%D8%A6%D9%82+%D8%A7%D9%84%D8%A3%D9%87%D8%B1%D8%A7%D9%85%D8%8C+%D8%A7%D9%84%D9%87%D8%B1%D9%85%D8%8C+%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9%E2%80%AD/@29.9680929,31.1176587,14z/data=!4m5!3m4!1s0x14584feb830d4c3b:0xf4c7238eac24d083!8m2!3d29.9711917!4d31.1013439" target="_blank" title="Our Location 😍"><i class="fa-solid fa-globe"></i></a></span>
+                </div>
+                <div class="strip-share">
+                    <span id="stripShare" title="Share Our Website 😍"> <i class="fa-sharp fa-solid fa-share-nodes"></i> </span>
+                </div>
+            </div>
+        </div>
+        <div class="nav-tab-menu" id="tabMenu">
+            <div class="nav-item">
+                <ul class="list-unstyled">
+                    <li> <a class="fa-solid fa-search bg-info rounded-2 p-2" id="searchBtn"> Search</a> </li>
+                    <li> <a id="categoriesBtn" >Categories</a> </li>
+                    <li> <a id="areaBtn" >Area</a> </li>
+                    <li> <a id="ingredientsBtn" >ingredients</a> </li>
+                    <li> <a id="ContactUsBtn" >Contact Us</a> </li>
+                </ul>
+            </div>
+            <div class="nav-social-item">
+                <a href="https://www.facebook.com/profile.php?id=100014770782348" target="_blank"> <i class="fa-brands fa-facebook-f"></i> </a>
+                <a href="https://www.instagram.com/invites/contact/?i=10l0p31eaiaq0&utm_content=2adrt4q" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>
+                <a href="http://wa.me/+201141770634" target="_blank"> <i class="fa-brands fa-whatsapp"></i> </a>
+                <div><span>Copyright © 2022 <b>Mohamed Essam</b> . All rights reserved .</span></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

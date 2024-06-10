@@ -1,0 +1,204 @@
+body {
+    background-color: black;
+}
+
+.post {
+    position: relative;
+}
+
+.post-info {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    bottom: 100%;
+    width: 100%;
+    height: 0%;
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.7s ease-in-out;
+}
+
+.post:hover .post-info{
+    top: 0%;
+    bottom: 0%;
+    height: 100%;
+    opacity: 0.6;
+}
+
+.layer {
+    cursor: pointer;
+}
+
+.form-control {
+    color: #fff;
+    background-color: rgb(39, 38, 38);
+    margin-bottom: 10px;
+    border: none;
+}
+
+::placeholder {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+h1 {
+    font-weight: 300;
+    text-shadow: 2px 2px 20px #ffffff;
+}
+
+/* strip navbar */
+
+.strip-header-navbar {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 60px;
+    height: 100%;
+    background-color: #f8f6f6;
+    text-align: center;
+    transition: all 0.8s;
+}
+
+.strip-logo {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.strip-logo img {
+    height: 48px;
+}
+
+.strip-toggel-menu {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 30px;
+    transition: all 0.8s;
+}
+
+.strip-social-icon {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    font-size: 25px;
+    transform: translate(-50% , -50%);
+}
+
+.strip-share span , .strip-lang a {
+    color:rgb(37, 108, 167);
+    cursor: pointer;
+}
+
+.nav-tab-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    color: #fff;
+    background-color: black;
+    transform: translateX(-100%) ;
+    transition: all 0.8s;
+}
+
+.open-menu {
+    transform: scale(1) ;
+}
+
+.nav-tab-menu ul li{
+    padding: 30px 0 0 30px;
+}
+
+.nav-tab-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.nav-social-item {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+}
+
+.nav-social-item a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: rgb(33, 37, 41);
+    font-size: 30px;
+    transition: all 0.3s;
+}
+
+.nav-social-item a:hover {
+    color: rgb(37, 108, 167);
+    transform: rotate(180deg);
+}
+
+.nav-social-item a i{
+    padding: 5px;
+    transition: all 0.3s ;
+}
+
+.nav-social-item a i:hover {
+    transform: rotate(360deg);
+}
+
+.nav-social-item span {
+    padding-top: 20px;
+    color: rgb(33, 37, 41);
+}
+
+.nav-social-item span b {
+    color: rgb(95, 228, 255);
+}
+
+.mealInstructions h2 i {
+    color: rgb(95, 228, 255);
+    transform: rotate(40deg);
+    font-size: 35px;
+    margin-right: 5px;
+    text-shadow: 2px 2px 8px rgb(16, 214, 112);
+}
+
+.area , .ingredients{
+    cursor: pointer;
+}
+
+.area i {
+    font-size: 50px;
+    color: rgb(185, 99, 0);
+}
+
+.area h2 {
+    font-weight: 200;
+    color: #fff;
+}
+
+.ingredients i {
+    font-size: 50px;
+    color: rgb(7, 135, 130);
+}
+
+.ingredients h2 {
+    font-weight: 200;
+    color: #fff;
+}
+
+.showEye {
+    position: absolute;
+    color: rgb(13, 110, 253);
+    top: 15%;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.disabledBtn {
+    cursor:no-drop !important;
+}
